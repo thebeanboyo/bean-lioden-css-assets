@@ -1,0 +1,1283 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap');
+
+
+
+
+
+
+
+
+:root{
+  --primary-text: rgb(242,233,225);
+  --muted-text: rgb(181,131,141);
+  --css-cred-text: rgb(206,165,173);
+
+
+
+
+  --link-primary: rgb(255,205,178);
+  --link-hover: rgb(255,180,162);
+
+
+
+
+  --primary-panel-bg-mid: rgba(142,98,107,0.7);
+  --primary-panel-bg-light: rgba(142,98,107,0.3);
+  --primary-panel-bg-dark: rgba(142,98,107,0.8);
+  --secondary-panel-bg-dark: rgba(181,131,141,0.8);
+  --secondary-panel-bg-light: rgba(181,131,141,0.3);
+
+
+
+
+  --left-table-background: rgba(86,60,65,0.5);
+
+
+
+
+  --primary-border: 1px solid rgb(181,131,141);
+  --secondary-border: 1px solid rgb(255,180,162);
+  --border-tertiary: 1px solid rgb(255,205,178);
+
+
+
+
+  --dark-accent: rgba(55,52,61,0.6);
+  --light-accent: rgba(229,152,155,0.7);
+
+
+
+
+  --secondary-chat: rgba(196,135,137,0.8);
+
+
+
+
+  --alert-success-bg: rgba(180,214,162,0.7);
+  --alert-success-text: rgb(36,58,24);
+  --alert-success-border: 1px solid rgb(36,58,24);
+  --alert-success-link: rgb(215,242,201);
+  --alert-success-link-hover: rgb(36,58,24);
+
+
+
+
+  --alert-danger-bg: rgba(204,150,130,0.7);
+  --alert-danger-text: rgb(94,59,47);
+  --alert-danger-border: 1px solid rgb(94,59,47);
+  --alert-danger-link: rgb(242,197,181);
+  --alert-danger-link-hover: rgb(94,59,47);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  background: url('https://raw.githubusercontent.com/thebeanboyo/bean-lioden-css-assets/refs/heads/main/personal-main/main_ld_css_bg.png') fixed;
+  background-size: 100%;
+  font-family: "Texturina";
+  color: var(--primary-text);
+}
+
+
+
+
+
+
+
+
+/* topbar // navbar ---------- */ 
+
+
+
+
+.topbar {
+    background: var(--primary-panel-bg-dark);
+    border: var(--secondary-border) !important;
+    border-top: none;
+    border-radius: 5px;
+    color: var(--primary-text);
+}
+
+
+
+
+
+
+
+
+/* if left topbar links are to be diff */
+
+
+
+
+/* .topbar li a { */
+/*    color: var(--link-primary) !important; */
+/*} */
+
+
+
+
+/*.topbar li a:hover{ */
+/*    color: var(--link-hover) !important; */
+/*    transition: 0.25s; */
+/*} */
+
+
+
+
+
+
+
+
+.navbar {
+    background: var(--secondary-panel-bg-dark);
+    border: var(--secondary-border) !important;
+    border-radius: 5px;
+    font-family: "Texturina";
+}
+
+
+
+
+.navbar li a {
+    color: var(--primary-text) !important;
+}
+
+
+
+
+.navbar li a:hover {
+    background: var(--primary-panel-bg-dark) !important;
+    transition: 0.25s;
+}
+
+
+
+
+/* primary panel -------------------- */
+
+
+
+
+
+
+
+
+/* sidebar ---------- */
+
+
+
+
+.container.main {
+    background: var(--secondary-panel-bg-light);
+    border: none;
+    box-shadow: none;
+    border-radius: 2px;
+}
+.container h3{
+    color: var(--primary-text);
+}
+
+
+
+
+
+
+
+
+/* center panel ---------- */
+
+
+
+
+.col-md-9{
+    background: none;
+}
+
+
+
+
+#commentBox{
+    height: 150px !important;
+    background: var(--primary-panel-bg-light) !important;
+    border: var(--primary-border) !important;
+}
+
+
+
+
+#fraProfileContent{
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+/* Home > Den topbar ---------- */
+
+
+
+
+
+
+
+
+.breadcrumb {
+	background: var(--primary-panel-bg-dark);
+        border: var(--primary-border) !important;
+}
+
+
+
+
+.breadcrumb .active {
+	color: var(--primary-text);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* alerts ---------- */
+
+
+
+
+.alert {
+	background: var(--alert-success-bg);
+	color: var(--alert-success-text);
+        text-align: center;
+        border: var(--alert-success-border);
+}
+
+
+
+
+.alert a:link, .alert a:visited {
+        color: var(--alert-success-link) !important;
+}
+
+
+
+
+.alert a:hover {
+        color: var(--alert-success-link-hover) !important;
+}
+
+
+
+
+
+
+
+
+.alert-danger {
+	background: var(--alert-danger-bg);
+	color: var(--alert-danger-text);
+        border: var(--alert-danger-border);
+}
+
+
+
+
+.alert-danger a:link, .alert-danger a:visited {
+        color: var(--alert-danger-link) !important;
+}
+
+
+
+
+.alert-danger a:hover {
+        color: var(--alert-danger-link-hover) !important;
+}
+
+
+
+
+
+
+
+
+.alert-warning {
+	background: var(--alert-danger-bg);
+	color: var(--alert-danger-text);
+        border: var(--alert-danger-border);
+}
+
+
+
+
+.alert-warning a:link, .alert-warning a:visited {
+        color: var(--alert-danger-link) !important;
+}
+
+
+
+
+.alert-warning a:hover {
+        color: var(--alert-danger-link-hover) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* bottom panels ---------- */
+
+
+
+
+.feature, div.left {
+	background: var(--primary-panel-bg-mid);
+        border: var(--primary-border) !important;
+}  
+
+
+
+
+
+
+
+
+/* sidebar info */
+
+
+
+
+.panel {
+	background: var(--primary-panel-bg-mid) !important;
+	box-shadow: none !important;
+        border: var(--primary-border) !important;
+	color: var(--primary-text) !important;
+}
+
+
+
+
+/* energy bar whitespace */
+.progress {
+	background: var(--dark-accent);
+	/*color: #FFFFFF !important;*/
+}
+
+
+
+
+/* energy txt */
+.progress div {
+	color: var(--primary-text) !important;
+}
+
+
+
+
+/* energy bar active */
+.progress-bar {
+	background: var(--light-accent);
+	/*color: #FFFFFF !important;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#pageSidebar > .col-md-12.col-xs-6:before{*/
+/*         position: relative;*/
+/*         background: var(--primary-panel-bg-mid) !important;*/
+/*         box-shadow: none !important;*/
+/*         padding-left: 5px;*/
+/*         padding-right: 5px;*/
+/*}
+
+
+
+
+/*#pageSidebar > .col-md-12.col-xs-6 > .panel.panel-default:first-of-type { */
+/*         background: var(--primary-panel-bg-mid) !important;*/
+/*         margin-top:50px;*/
+/*         box-shadow: none !important;*/
+/*         border: var(--primary-border);*/
+/*}
+
+
+
+
+
+
+
+
+/*#pageSidebar > .col-md-12.col-xs-6 > .panel.panel-default:first-of-type::before { */
+/*         content: '';*/
+/*         display: block;*/
+/*         position: absolute;*/
+/*         background-image: url("https://static.lioden.com/images/explorenew/valentines/petitelionessday.png");*/
+/*         background-repeat: no-repeat;*/
+/*         background-position: 50% 65%;*/
+/*         background-size: 255px, auto;*/
+/*         width: 100%;*/
+/*         margin: 0px;*/
+/*         height: 120px;*/
+/*         padding: 0px;*/
+/*         top: -43px;*/
+/*         overflow: auto;*/
+/*         z-index:2;*/
+/*}
+
+
+
+
+/*#fraOrganizationBlock:before {*/
+/*  content: '';*/
+/*  width: 512px;*/
+/*  height: 308px;*/
+/*  background-image: url('https://static.lioden.com/images/explorenew/valentines/achromaticlionflirtday.png');*/
+/*  background-size: 500px, auto;*/
+/*  position: absolute;*/
+/*  display: block;*/
+/*  left: -225px;*/
+/*  z-index: 0;*/
+/*}
+
+
+
+
+
+
+
+
+/* chat mods */
+
+
+
+
+/* "white" chatbox mod */
+.s-chat-message:nth-child(even) {
+	background: var(--light-accent) !important;
+/*        border: none !important;*/
+}
+
+
+
+
+/* "gray" chatbox mod */
+.s-chat-message:nth-child(odd) {
+	background: var(--secondary-chat) !important;
+/*	border: none !important;*/
+}
+
+
+
+
+/* pinned chat */
+
+
+
+
+.s-chat-message__pinned {
+	background: var(--light-accent) !important;
+	color: #2F373C !important;
+      	border: none !important;
+}
+
+
+
+
+.s-chat-message_timestamp {
+	color: rgb(43,41,45) !important;
+}
+
+
+
+
+div#chatMessageContainer {
+        border: var(--border-tertiary) !important;
+}
+
+
+
+
+/* current chat channel */
+
+
+
+
+button#label_currentChannel {
+	border: none !important;
+	background: var(--light-accent) !important;
+        border: var(--border-tertiary) !important;
+}
+
+
+
+
+
+
+
+
+/* chat settings button */
+#btnChatSettings{
+     background: url('https://raw.githubusercontent.com/thebeanboyo/bean-lioden-css-assets/refs/heads/main/personal-main/ico-settings.png') !important;
+     background-size: contain !important;
+}
+
+
+
+
+/* reload chat button */
+#btnLoadNewMessages{
+     background: url('https://raw.githubusercontent.com/thebeanboyo/bean-lioden-css-assets/refs/heads/main/personal-main/ico-refresh.png') !important;
+     background-size: contain !important;
+}
+
+
+
+
+
+
+
+
+/* main lion panel */
+
+
+
+
+/* panel bg */
+.table {
+	background: var(--primary-panel-bg-mid);
+        border: var(--primary-border) !important;
+	border-collapse: separate;
+	border-radius: 5px;
+}
+
+
+
+
+.table .left {
+	background: var(--left-table-background) !important;
+}
+
+
+
+
+.xlarge > a img{
+  border: none !important;
+  opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+/* king title/muts */
+.top, .bottom, th {
+	background: var(--secondary-panel-bg-dark) !important;
+	color: var(--primary-text) !important;
+	border-radius: 5px;
+       
+}
+
+
+
+
+
+
+
+
+/* main lion and territory stats */
+.inner-table .left {
+	background: var(--left-table-background) !important;
+}
+
+
+
+
+.inner-table .right {
+  background: var(--primary-panel-bg-mid);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* lion image mod */
+div#lion_image {
+        transition: 0.25s;
+	opacity: 0.6;
+        border: var(--primary-border) !important;
+	border-radius: 20px !important;
+	overflow: hidden;
+     	/*margin-top: -px;*/
+	/*margin-left: -px;*/
+}
+
+
+
+
+div#lion_image:hover{
+     /*border-radius: 10px !important;*/
+     transition: 0.25s;
+     opacity: 1;
+}
+
+
+
+
+/* player img mod */
+table#player > tbody tr.right > td.right > img {
+	opacity: 0.8;
+        border-radius: 0px !important;
+	overflow: hidden;
+        border: var(--primary-border) !important;
+}
+
+
+
+
+/* buttons, chatbox text field, etc */
+
+
+
+
+input, select, textarea {
+	background: var(--secondary-panel-bg-dark) !important;
+	border: var(--primary-border) !important;
+	border-color: black;
+	border-radius: 5px;
+	box-shadow: none !important;
+        text-shadow: 1px 1px 0px rgba(0,0,0, 0) !important;
+	color: var(--primary-text) !important;
+        transition: 0.25s ease;
+}
+
+
+
+
+input:hover, select:hover, textarea:hover{
+        background: var(--light-accent) !important;
+        text-shadow: 1px 1px 0px var(--primary-panel-bg-mid) !important;
+        transition: 0.25s ease;
+}
+
+
+
+
+
+
+
+
+.right_odd {
+	background: none !important;
+}
+
+
+
+
+div .feature{
+  background: var(--primary-panel-bg-mid);
+}
+
+
+
+
+
+
+
+
+/* beetle grid */
+
+
+
+
+.sub_menu {
+	background: var(--primary-panel-bg-mid) !important;
+        border: var(--primary-border) !important;
+}
+
+
+
+
+.sub_menu_item_selected {
+	background: var(--primary-panel-bg-mid) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* cave grid */
+.cave-grid, .mound-grid {
+  background: var(--primary-panel-bg-mid);
+  border: var(--primary-border) !important;
+}
+
+
+
+
+.col-md-4.col-xs-6 > a div.cave-grid > img{
+  opacity: 0.6;
+}
+
+
+
+
+
+
+
+
+#fraCaveList > .col-md-4.col-xs-6 > a div.cave-grid > img {
+  opacity: 0.6;
+}
+
+
+
+
+
+
+
+
+#fraMoundList > .col-md-3.col-xs-4 > a div.mound-grid > img {
+  opacity: 0.6;
+}
+
+
+
+
+/* lioden logo */
+
+
+
+
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
+  content: url('https://raw.githubusercontent.com/thebeanboyo/bean-lioden-css-assets/refs/heads/main/personal-main/lioden-logo-full-2-base-pink.png'); 
+} 
+
+
+
+
+
+
+
+
+/* scrollbar mods */
+
+
+
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  background: var(--link-primary);
+}
+
+
+
+
+::-webkit-scrollbar-track {
+  background: var(--muted-text);
+}
+
+
+
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-text);
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+/* link mods */
+a:link, a:visited {
+  transition: 0.25s;
+  color: var(--link-primary) !important;
+}
+
+
+
+
+a:hover {
+  color: var(--link-hover) !important;
+  transition: 0.25s;
+}
+
+
+
+
+/* "switch acc" button */
+
+
+
+
+.button{
+        background: var(--secondary-panel-bg-dark) !important;
+	border: var(--primary-border) !important;
+	border-color: black;
+	border-radius: 5px;
+	box-shadow: none !important;
+        text-shadow: 1px 1px 0px rgba(0,0,0,0) !important;
+	color: var(--primary-text) !important;
+        transition: 0.25s ease;
+
+
+
+
+}
+
+
+
+
+.button:hover{
+        background: var(--light-accent) !important;
+        text-shadow: 1px 1px 0px var(--primary-panel-bg-mid) !important;
+        transition: 0.25s ease;
+
+
+
+
+}
+
+
+
+
+/* text mods */
+
+
+
+
+.text-muted {
+     color: var(--muted-text) !important;
+}
+
+
+
+
+h1 {
+   text-align: center;
+   color: var(--primary-text);
+}
+
+
+
+
+h2 {
+    text-align: center;
+    color: var(--primary-text);
+}
+
+
+
+
+h3 {
+    color: var(--primary-text);
+}
+
+
+
+
+h1 small {
+  color: var(--primary-text);
+}
+
+
+
+
+.featured-lion {
+  background-color: var(--primary-panel-bg-mid);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------- site-wide CSS changes for lioModded ----------- */
+
+
+
+
+
+
+
+
+/* hoard fixes */
+.item {
+  background: var(--primary-panel-bg-dark);
+  font-family: "OpenSans", Helvetica, Tahoma, Arial, sans-serif;
+  border: var(--primary-border);
+}
+
+
+
+
+div.item-header {
+  background: var(--secondary-panel-bg-dark);
+  color: var(--primary-text);
+}
+
+
+
+
+div.item-footer {
+  background: var(--secondary-panel-bg-light);
+  font-family: "OpenSans", Helvetica, Tahoma, Arial, sans-serif;
+}
+
+
+
+
+/* "kill"/"send to nature reserve" buttons */
+input[type="submit"].bad {
+  background: var(--alert-danger-bg) !important;
+  color: var(--alert-danger-text) !important;
+  border: var(--alert-danger-border) !important;
+}
+
+
+
+
+
+
+
+
+input[type="submit"].bad:hover {
+  background: var(--alert-danger-text) !important;
+  color: var(--alert-danger-link) !important;
+  border: var(--alert-danger-border) !important;
+}
+
+
+
+
+input#txtFilterItems placeholder{
+  color: var(--primary-text);
+}
+
+
+
+
+input[type="submit"].good {
+  background: var(--alert-success-bg) !important;
+  color: var(--alert-success-text) !important;
+  border: var(--alert-success-border) !important;
+}
+
+
+
+
+input[type="submit"].good:hover {
+  background: var(--alert-success-text) !important;
+  color: var(--alert-success-link) !important;
+  border: var(--alert-success-border) !important;
+}
+
+
+
+
+/* misc dialogues, dropdowns, etc */
+
+
+
+
+.bg-info-100, .sub_sub_menu {
+  background: var(--primary-panel-bg-mid) !important;
+}
+
+
+
+
+.cbo-list {
+  background: var(--primary-panel-bg-dark) !important;
+}
+
+
+
+
+.actionBar, .combo-selection-container {
+  background: var(--secondary-panel-bg-dark);
+  border: var(--secondary-border);
+}
+
+
+
+
+.sub_sub_menu_item_selected {
+  border-bottom: 5px solid var(--secondary-panel-bg-dark);
+}
+
+
+
+
+.combo-select-row:hover {
+  background: var(--primary-panel-bg-mid)
+}
+
+
+
+
+input#txtFilterItems::placeholder {
+  color: var(--css-cred-text);
+}
+
+
+
+
+
+
+
+
+button.clearSelection {
+  background-color: var(--primary-panel-bg-mid);
+  border: var(--secondary-border);
+}
+
+
+
+
+/* oasis paypal button !!DO NOT TOUCH!! (technically it's safe but it hides the "buy now" button and that doesn't strike me as something great) */
+
+
+
+
+form.center input[type="submit"] {
+  background: url(https://static.lioden.com/images/btn_buynowCC_LG.gif) !important;
+  border: none !important;
+}
+
+
+
+
+/* ------ */
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------- custom extras (ie boxes, buttons, etc) --------- */
+
+
+
+
+
+
+
+
+
+
+
+
+/* custom boxes ---- */
+
+
+
+
+.box-container{
+  background: none;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  height: 350px !important;
+  justify-content: left;
+  overflow: hidden;
+}
+
+
+
+
+.small-box-container{
+  background: none;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  height: 200px !important;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+div.box{
+  flex: 1;
+  height: 95%;
+  background: var(--primary-panel-bg-mid) !important;
+  padding: 24px;
+  border: var(--primary-border) !important;
+  border-radius: 5px;
+  font-size: 13px;
+  margin: 1rem;
+  text-shadow: 1px 1px 0px rgba(0,0,0, 0) !important;
+  color: var(--primary-text) !important;
+  overflow: scroll;
+  position: relative;
+}
+
+
+
+
+
+
+.box::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  background: var(--link-primary);
+}
+
+
+
+
+.box::-webkit-scrollbar-track {
+  background: var(--muted-text);
+}
+
+
+
+
+.box::-webkit-scrollbar-thumb {
+  background: var(--primary-text);
+  border-radius: 4px;
+}
+
+
+
+
+div.box h3{
+  margin-top: 0px;
+  margin-bottom: 20px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.fake-button{
+  background: var(--secondary-panel-bg-dark) !important;
+  display:inline-block !important;
+  border: var(--primary-border) !important;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 4px 12px;
+  margin: 2px 0;
+  text-shadow: 1px 1px 0px rgba(0,0,0, 0) !important;
+  color: var(--primary-text) !important;
+  transition: 0.25s ease;
+  cursor: pointer;
+}
+.fake-button a{
+  color: var(--primary-text) !important;
+}
+.fake-button:hover{
+  background: var(--light-accent) !important;
+  text-shadow: 1px 1px 0px var(--primary-panel-bg-mid) !important;
+  transition: 0.25s ease;
+}
+
+
+
+/* css cred !!DO NOT REMOVE!! */
+
+
+
+
+.floatright small:before {
+  color: var(--css-cred-text);
+  content: "CSS by thebeanboyo (#148817) :|: ";
+}
+
+
